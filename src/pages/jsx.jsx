@@ -1,3 +1,4 @@
+import Layout from "../components/Layout"
 function Inicio(){
     //return "<h1>Título</h1>"
     const a = 4
@@ -11,14 +12,16 @@ function Inicio(){
     }
 
     return(
-        <div>
-            <h1>JSX é um conceito Central</h1>
-            <p>
-                {JSON.stringify({obj})}
-            </p>
-            {tituloH2}
-            {subtitulo()}
-        </div>
+        <Layout>
+                <div>
+                    <h1>JSX é um conceito Central</h1>
+                    <p>
+                        {JSON.stringify({obj})}
+                    </p>
+                    {tituloH2}
+                    {subtitulo()}
+                </div>
+        </Layout>
     )
 }
 
